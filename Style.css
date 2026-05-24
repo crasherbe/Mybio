@@ -1,37 +1,57 @@
+/* BACKGROUND UTAMA */
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial;
-  background: #111;
-  color: white;
+  margin: 0;                  /* fungsi: hapus jarak default browser */
+  padding: 0;                 /* fungsi: hapus padding default */
+  font-family: Arial;        /* fungsi: font tulisan */
+  background: #111;          /* fungsi: warna background gelap */
+  color: white;              /* fungsi: warna teks putih */
 }
 
+/* CONTAINER UTAMA */
 .container {
-  width: 90%;
-  max-width: 400px;
-  margin: auto;
-  text-align: center;
-  padding-top: 50px;
+  width: 90%;                /* fungsi: lebar fleksibel */
+  max-width: 400px;          /* fungsi: batas lebar biar gak melebar */
+  margin: auto;              /* fungsi: center halaman */
+  text-align: center;       /* fungsi: semua teks di tengah */
+  padding-top: 50px;        /* fungsi: jarak dari atas */
 }
 
+/* FOTO PROFILE */
 .profile {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
+  width: 120px;             /* fungsi: ukuran foto */
+  height: 120px;            /* fungsi: biar kotak dulu */
+  border-radius: 50%;       /* fungsi: bikin bulat */
+  object-fit: cover;        /* fungsi: biar gak gepeng */
+  display: block;           /* fungsi: biar bisa center */
+  margin: 0 auto 20px;      /* fungsi: center + jarak bawah */
+  box-shadow: 0 0 15px rgba(255,255,255,0.2); /* fungsi: efek glow */
 }
 
+/* JUDUL */
+h1 {
+  margin: 10px 0 5px;       /* fungsi: jarak atas bawah */
+}
+
+/* DESKRIPSI */
+p {
+  margin-bottom: 20px;      /* fungsi: jarak ke tombol */
+  opacity: 0.8;             /* fungsi: teks agak soft */
+}
+
+/* TOMBOL */
 .btn {
-  display: block;
-  background: #25D366;
-  color: white;
-  text-decoration: none;
-  padding: 15px;
-  margin: 15px 0;
-  border-radius: 12px;
-  font-size: 18px;
+  display: block;           /* fungsi: tombol jadi baris sendiri */
+  background: #25D366;      /* fungsi: warna tombol */
+  color: white;             /* fungsi: warna teks */
+  text-decoration: none;    /* fungsi: hilang garis link */
+  padding: 15px;            /* fungsi: besar tombol */
+  margin: 12px 0;           /* fungsi: jarak antar tombol */
+  border-radius: 12px;      /* fungsi: sudut rounded */
+  font-size: 18px;          /* fungsi: ukuran teks */
+  transition: 0.2s;         /* fungsi: animasi hover halus */
 }
 
+/* EFEK HOVER */
 .btn:hover {
-  opacity: 0.8;
+  opacity: 0.8;             /* fungsi: efek redup saat disentuh */
 }
